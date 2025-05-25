@@ -2,6 +2,10 @@ import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
+import SkillsSection from '../components/skillsection'
+import ProfessionalSkills from '../components/professionalskills'
+import TechStack from '../components/techstackk'
+
 const LandingPage = () => {
 //   const [loading, setLoading] = useState(true)
 
@@ -26,127 +30,60 @@ const LandingPage = () => {
         <div className="landing-page-image">
         <img src="path/to/your/image.jpg" alt="Landing Page" />
         </div>
+        <div>
+            <h2>Featured Projects</h2>
+            <p>A showcase of my recent work in full-stack
+                 development, AI integration, and mobile applications
+            </p>
+            <div className='...'>
+                <div className='grid grid-cols-2 gap-4'>
+                    <div className='col-span-1'>
+                        <p>Project 1</p>
+                    </div>
+                    <div className='col-span-1'>
+                        <p>Info</p>
+                    </div>
+                </div>
+                 <div className='grid grid-cols-2 gap-4'>
+                    <div className='col-span-1'>
+                        <p>info</p>
+                    </div>
+                    <div className='col-span-1'>
+                        <p>Project 2</p>
+                    </div>
+                </div>
+                 <div className='grid grid-cols-2 gap-4'>
+                    <div className='col-span-1'>
+                        <p>Project 3</p>
+                    </div>
+                    <div className='col-span-1'>
+                        <p>Info</p>
+                    </div>
+                </div>
+            </div>
+            <button>See More Projects On Github</button>
+        </div>
         <div className=''>
             <h2>Skills & Expertise</h2>
             <p>A comprehensive overview of my technical
                  skills and the tools I use to build innovative solutions
             </p>
-            <div className='section'>
-                <div className='grid grid-cols-4 gap-3'>
-                    <div className='col-span-1'>
-                        <img src="path/to/your/image.jpg" alt="react" /><span>Frontend Development</span>
-                    </div>
-                    <div className='col-span-1'>
-                        <img src="path/to/your/image.jpg" alt="js" /><span>Backend Development</span>
-                    </div>
-                    <div className='col-span-1'>
-                        <img src="path/to/your/image.jpg" alt="database" /><span>Database Managament</span>
-                    </div>
-                    <div className='col-span-1'>
-                        <img src="path/to/your/image.jpg" alt="github" /><span>Tools & Technologies</span>
-                    </div>
-                </div>
-            </div>
+             <SkillsSection />
             <h3>Tech Stack</h3>
             <p>The technologies I use to build powerful, scalable, and intelligent applications</p>
-            <div className='grid grid-cols-6 gap-2'>
-                <div className='col-span-1'>
-                    <img src="path/to/your/image.jpg" alt="html" />
-                    <p>React</p>
-                    <plaintext>Frontend</plaintext>
-                </div>
-                <div className='col-span-1'>
-                    <img src="path/to/your/image.jpg" alt="html" />
-                    <p>Node.js</p>
-                    <plaintext>Backend</plaintext>
-                </div>
-                <div className='col-span-1'>
-                    <img src="path/to/your/image.jpg" alt="html" />
-                    <p>JavaScript</p>
-                    <plaintext>Language</plaintext>
-                </div>
-                <div className='col-span-1'>
-                    <img src="path/to/your/image.jpg" alt="html" />
-                    <p>Python</p>
-                    <plaintext>Language</plaintext>
-                </div>
-                <div className='col-span-1'>
-                    <img src="path/to/your/image.jpg" alt="html" />
-                    <p>HTML</p>
-                    <plaintext>Frontend</plaintext>
-                </div>
-                <div className='col-span-1'>
-                    <img src="path/to/your/image.jpg" alt="html" />
-                    <p>Express</p>
-                    <plaintext>Framework</plaintext>
-                </div>
-                <div className='col-span-1'>
-                    <img src="path/to/your/image.jpg" alt="html" />
-                    <p>PostgreSQL</p>
-                    <plaintext>Database</plaintext>
-                </div>
-                <div className='col-span-1'>
-                    <img src="path/to/your/image.jpg" alt="html" />
-                    <p>MySQL</p>
-                    <plaintext>Database</plaintext>
-                </div>
-                <div className='col-span-1'>
-                    <img src="path/to/your/image.jpg" alt="html" />
-                    <p>MongoDB</p>
-                    <plaintext>Database</plaintext>
-                </div>
-                <div className='col-span-1'>
-                    <img src="path/to/your/image.jpg" alt="html" />
-                    <p>Tailwind</p>
-                    <plaintext>Styling</plaintext>
-                </div>
-                <div className='col-span-1'>
-                    <img src="path/to/your/image.jpg" alt="html" />
-                    <p>Bootstrap</p>
-                    <plaintext>Styling</plaintext>
-                </div>
-                <div className='col-span-1'>
-                    <img src="path/to/your/image.jpg" alt="html" />
-                    <p>Git</p>
-                    <plaintext>Version Control</plaintext>
-                </div>
-                <div className='col-span-1'>
-                    <img src="path/to/your/image.jpg" alt="html" />
-                    <p>GitHub</p>
-                    <plaintext>Platform</plaintext>
-                </div>
-                <div className='col-span-1'>
-                    <img src="path/to/your/image.jpg" alt="html" />
-                    <p>AWS</p>
-                    <plaintext>Cloud</plaintext>
-                </div>
-                <div className='col-span-1'>
-                    <img src="path/to/your/image.jpg" alt="html" />
-                    <p>GCP</p>
-                    <plaintext>Cloud</plaintext>
-                </div>
-            </div>
+            <TechStack />
+            <ProfessionalSkills/>
             <div className=''>
-                <h2>Professional Skills</h2>
-                <p>Essential soft skills that complement my technical expertise</p>
-                <div className='grid grid-cols-3 gap-2'>
+                <h3>Currently Learning</h3>
+                <div className='grid grid-cols-3 gap-1'>
                     <div className='col-span-1'>
-                        <p><span></span>Critical Thinking & Problem Solving</p>
+                        AWS Cloud Practitioner
                     </div>
                     <div className='col-span-1'>
-                        <p><span></span>Adaptability & Quick Learning</p>
+                        Cloud Architecture
                     </div>
                     <div className='col-span-1'>
-                        <p><span></span>Strong Communication Skills</p>
-                    </div>
-                    <div className='col-span-1'>
-                        <p><span></span>Team Collaboration</p>
-                    </div>
-                    <div className='col-span-1'>
-                        <p><span></span>Time Management & Multitasking</p>
-                    </div>
-                    <div className='col-span-1'>
-                        <p><span></span>Creative Problem-Solving</p>
+                        Artificial Intelligence
                     </div>
                 </div>
             </div>
