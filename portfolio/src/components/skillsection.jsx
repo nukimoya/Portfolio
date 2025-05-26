@@ -19,11 +19,6 @@ export default function SkillsSection() {
 
   return (
     <div>
-      <h2 className="text-3xl font-bold text-center mb-2">Skills & Expertise</h2>
-      <p className="text-center text-gray-400 mb-6">
-        A comprehensive overview of my technical skills and the tools I use to build innovative solutions
-      </p>
-
       <div className="flex flex-wrap justify-center gap-4 mb-8">
         {Object.keys(categories).map((category) => (
           <button
