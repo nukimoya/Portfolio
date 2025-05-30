@@ -1,14 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;700&display=swap');
 @import "tailwindcss";
+
+/* *{
+  outline: 1px solid red;
+} */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', 'Poppins', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(120deg, #08172e 0%, #0a1a2f 100%);
+  min-height: 100vh;
+  color: #e0e7ff;
+  position: relative;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Animated gradient background - more color stops, lighter, faster */
+ .animated-bg {
+  position: fixed;
+  inset: 0; 
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(120deg, #08172e 0%, #18305a 20%, #1e3a5c 40%, #2b4865 60%, #26628d 80%, #003b55 100%);
+  background-size: 300% 300%;
+  animation: gradientMove 6s ease-in-out infinite;
+  opacity: 0.95;
+}
+
+@keyframes gradientMove {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* SVG Blobs - lighter, more visible, unique movement */
+.blob {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.32;
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+.blob-1 { animation: blobMove1 18s ease-in-out infinite alternate; }
+.blob-2 { animation: blobMove2 24s ease-in-out infinite alternate; }
+.blob-3 { animation: blobMove3 30s ease-in-out infinite alternate; }
+.blob-4 { animation: blobMove4 22s ease-in-out infinite alternate; }
+
+@keyframes blobMove1 {
+  0% { transform: translateY(0) scale(1) rotate(0deg); }
+  50% { transform: translateY(-60px) scale(1.12) rotate(8deg); }
+  100% { transform: translateY(0) scale(1) rotate(0deg); }
+}
+@keyframes blobMove2 {
+  0% { transform: translateX(0) scale(1) rotate(0deg); }
+  50% { transform: translateX(60px) scale(1.08) rotate(-6deg); }
+  100% { transform: translateX(0) scale(1) rotate(0deg); }
+}
+@keyframes blobMove3 {
+  0% { transform: translate(-20px, 0) scale(1) rotate(0deg); }
+  50% { transform: translate(40px, -40px) scale(1.15) rotate(12deg); }
+  100% { transform: translate(-20px, 0) scale(1) rotate(0deg); }
+}
+@keyframes blobMove4 {
+  0% { transform: translateY(0) scale(1) rotate(0deg); }
+  50% { transform: translateY(40px) scale(1.1) rotate(-10deg); }
+  100% { transform: translateY(0) scale(1) rotate(0deg); }
+}
+
+/* Glassmorphism card - more transparent */
+.glass {
+  background: rgba(20, 30, 60, 0.38);
+  box-shadow: 0 8px 32px 0 rgba(8, 23, 46, 0.18);
+  backdrop-filter: blur(8px) saturate(110%);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(30, 41, 59, 0.18);
+}
+
+/* For section fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }

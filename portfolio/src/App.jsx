@@ -1,9 +1,17 @@
 import React from 'react'
+import { useEffect } from 'react';
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom'
 import './App.css'
 import LandingPage from './generalpages/landingpage.jsx'
+import { initEmailJS } from '../emailconfig';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
+
+  useEffect(() => {
+    initEmailJS();
+  }, []);
 
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -16,6 +24,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
+      <ToastContainer position="top-right" autoClose={3000} />
     </>
   );
 }
