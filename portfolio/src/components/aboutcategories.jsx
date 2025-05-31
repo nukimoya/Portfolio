@@ -3,88 +3,94 @@ import { FaMobileAlt, FaUsers, FaCode, FaServer } from 'react-icons/fa';
 
 const tabs = [
   {
-    title: 'Mobile Development',
-    icon: <FaMobileAlt />,
-    content: (
-      <>
-        <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
-          <FaMobileAlt className="text-blue-400" />
-          Mobile Development
-        </h2>
-        <p>I develop cross-platform mobile applications using Flutter, with a focus on clean architecture, responsive design, and performance optimization.</p>
-        <p className="mt-2">My experience includes building data-driven applications that connect to back-end services for dynamic and interactive functionality.</p>
-      </>
-    ),
-  },
-  {
-    title: 'Teamwork & Collaboration',
-    icon: <FaUsers />,
-    content: (
-      <>
-        <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
-          <FaUsers className="text-blue-400" />
-          Teamwork & Collaboration
-        </h2>
-        <p>I thrive in collaborative environments, actively participating in team discussions, sprint planning, and code reviews to ensure project success.</p>
-        <p className="mt-2">My ability to communicate effectively and contribute meaningfully to group efforts enhances productivity and fosters strong team dynamics.</p>
-      </>
-    ),
-  },
-  {
     title: 'Web Development',
     icon: <FaCode />,
     content: (
-      <>
-        <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
-          <FaCode className="text-blue-400" />
-          Web Development
-        </h2>
-        <p>I specialize in building responsive, high-performance web applications using React, Tailwind CSS, Node.js, and PostgreSQL.</p>
-        <p className="mt-2">My projects prioritize user experience, accessibility, and modern UI design principles.</p>
-      </>
+      <div className="bg-transparent">
+        <div className="flex items-center mb-6">
+          <div className="mr-4 p-3 bg-blue-900/30 rounded-lg">
+            <FaCode size={24} className="text-cyan-300" />
+          </div>
+          <h2 className="text-2xl font-bold mb-2 pt-2 text-white-100 flex items-center gap-1">Web Development</h2>
+        </div>
+        <p className="text-blue-100">
+          As a final-year Computer Science student, I specialize in building scalable, responsive web applications using React.js, Node.js, and PostgreSQL.
+          I focus on writing clean, efficient code while prioritizing user experience and accessibility.
+        </p>
+        <p className="mt-4 text-blue-100">
+          My academic and internship projects have helped me develop strong full-stack skills, emphasizing performance optimization and modern UI design.
+        </p>
+      </div>
     ),
   },
   {
     title: 'Cloud & DevOps',
     icon: <FaServer />,
     content: (
-      <>
-        <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
-          <FaServer className="text-blue-400" />
-          Cloud & DevOps
-        </h2>
-        <p>I deploy scalable applications using services like AWS and Railway, with CI/CD pipelines and containerization via Docker.</p>
-        <p className="mt-2">I focus on performance, uptime, and secure infrastructure to ensure seamless deployment and monitoring.</p>
-      </>
+      <div className="background-transparent">
+        <div className="flex items-center mb-6">
+          <div className="mr-4 p-3 bg-blue-900/30 rounded-lg">
+            <FaServer size={24} className="text-cyan-300" />
+          </div>
+          <h2 className="text-2xl font-bold mb-2 pt-2 text-white-100 flex items-center gap-1">Cloud & DevOps</h2>
+        </div>
+        <p className="text-blue-100">
+          I deploy and manage scalable applications on cloud platforms like AWS and Railway, utilizing Docker containers and CI/CD pipelines for efficient delivery.
+        </p>
+        <p className="mt-4 text-blue-100">
+          My growing knowledge in cloud infrastructure helps me focus on performance, security, and uptime in real-world development environments.
+        </p>
+      </div>
+    ),
+  },
+  {
+    title: 'Teamwork & Collaboration',
+    icon: <FaUsers />,
+    content: (
+      <div className="background-transparent">
+        <div className="flex items-center mb-6">
+          <div className="mr-4 p-3 bg-blue-900/30 rounded-lg">
+            <FaUsers size={24} className="text-cyan-300" />
+          </div>
+          <h2 className="text-2xl font-bold mb-2 pt-2 text-white-100 flex items-center gap-1">Teamwork & Collaboration</h2>
+        </div>
+        <p className="text-blue-100">
+          I’ve worked on multiple university group projects and contributed during my internship, where I participated in collaborative planning, code reviews, and team discussions.
+        </p>
+        <p className="mt-4 text-blue-100">
+          These experiences have sharpened my communication skills and taught me the importance of effective teamwork in delivering real-world software solutions.
+        </p>
+      </div>
     ),
   },
 ];
+
+
 
 const SkillTabs = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="bg-[#0d1117] text-white  px-6 py-12">
+    <div className="bg-[#0a1f3d] text-white rounded-xl my-15 px-6 py-6 border border-cyan-300/20 shadow-lg shadow-cyan-400/10 rounded-xl transition-all duration-300">
       {/* Tab Buttons */}
       <div className="flex flex-wrap gap-4 border-b border-gray-700 pb-4">
         {tabs.map((tab, idx) => (
           <button
             key={tab.title}
             onClick={() => setActiveIndex(idx)}
-            className={`flex items-center gap-2 px-4 py-2 rounded-md transition-all ${
+            className={`flex items-center gap-1 px-5 py-3 rounded-md transition-all ${
               activeIndex === idx
-                ? 'bg-blue-600 text-white shadow'
-                : 'bg-[#161b22] hover:bg-[#1f2937]'
+                ? 'bg-[#2f5c91] text-cyan-300 border-b-2 border-cyan-400 shadow'
+                : 'bg-[#0a1f3d] text-blue-200 hover:bg-[#14335f] hover:text-blue-100'
             }`}
           >
-            {tab.icon}
-            <span>{tab.title}</span>
+            {tab.icon}<span>{tab.title}</span>
           </button>
         ))}
       </div>
 
       {/* Tab Content */}
-      <div className="mt-8 bg-[#161b22] rounded-xl p-6 shadow-lg">
+      <div className="mt-8 rounded-xl px-5">
         {tabs[activeIndex].content}
       </div>
     </div>

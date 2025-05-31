@@ -10,7 +10,7 @@ const navLinks = [
 
 const socialLinks = [
   {
-    href: 'https://x.com/hadeyemi_',
+    href: 'https://x.com/ayothemsft',
     label: 'X',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 sm:w-6 sm:h-6">
@@ -37,6 +37,7 @@ const socialLinks = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeHash, setActiveHash] = useState(window.location.hash || '#about');
 
   // Scroll detection for shadow and background
   useEffect(() => {
@@ -44,6 +45,43 @@ const Navbar = () => {
       setScrolled(window.scrollY > 100);
     };
     window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Listen for hash changes to update active nav link
+  useEffect(() => {
+    const onHashChange = () => {
+      setActiveHash(window.location.hash || '#about');
+    };
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
+
+  // Smooth scroll tracking: update activeHash as user scrolls
+  useEffect(() => {
+    const sectionIds = navLinks.map(link => link.href.replace('#', ''));
+    const handleScroll = () => {
+      let found = false;
+      for (let i = 0; i < sectionIds.length; i++) {
+        const section = document.getElementById(sectionIds[i]);
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          // Section is considered active if its top is within 120px from the top (adjust as needed)
+          if (rect.top <= 120 && rect.bottom > 120) {
+            setActiveHash(`#${sectionIds[i]}`);
+            found = true;
+            break;
+          }
+        }
+      }
+      // If no section is found (scrolled above first), default to first
+      if (!found) {
+        setActiveHash(`#${sectionIds[0]}`);
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    // Run on mount in case user reloads mid-page
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -92,10 +130,14 @@ const Navbar = () => {
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className="relative px-3 py-2 text-sm font-medium transition-all duration-300 rounded-full text-blue-200 hover:text-white focus:text-white focus:outline-none"
+                  className={`relative px-3 py-2 text-sm font-medium transition-all duration-300 rounded-full text-blue-200 hover:text-white focus:text-white focus:outline-none group ${
+                    activeHash === link.href ? 'text-cyan-300 font-bold' : ''
+                  }`}
                 >
                   {link.name}
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></span>
+                  <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transition-transform duration-300 origin-left rounded-full ${
+                    activeHash === link.href ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+                  }`}></span>
                 </a>
               </li>
             ))}
@@ -143,7 +185,9 @@ const Navbar = () => {
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className="text-2xl font-semibold text-blue-200 hover:text-white transition-all duration-200"
+                  className={`text-2xl font-semibold transition-all duration-200 ${
+                    activeHash === link.href ? 'text-cyan-300 underline underline-offset-8 font-bold' : 'text-blue-200 hover:text-white'
+                  }`}
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.name}

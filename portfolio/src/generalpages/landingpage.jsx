@@ -66,51 +66,48 @@ const LandingPage = () => {
                     />
                 </div>
 
-                {/* <div className="max-w-3xl text-sm md:text-2xl text-blue-100 mb-8">
-                    Building scalable systems that solve real problems. Computer Science graduate with 2+ years of full-stack experience in TypeScript, React, Node.js, Django & AI-Driven Development. Passionate about cloud-native development, AI-powered solutions, and crafting seamless digital experiences.
-                </div> */}
-
-                <div className="max-w-3xl text-sm md:text-2xl text-blue-100 mb-8 px-5 py-3 bg-white/6 border border-white/10 shadow-md rounded-lg backdrop-blur-lg">
+                <div className="max-w-3xl text-sm md:text-lg text-blue-100 mt-2 mb-10 px-5 py-6 bg-transparent border border-white/10 shadow-[0_15px_30px_-5px_rgba(0,0,0,0.5)] rounded-lg backdrop-blur-lg">
                     Building scalable systems that solve real problems. Computer Science graduate with 2+ years of full-stack experience in TypeScript, React, Node.js, Django & AI-Driven Development. Passionate about cloud-native development, AI-powered solutions, and crafting seamless digital experiences.
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button className="px-8 py-3 rounded-full bg-gradient-to-r from-cyan-600 to-blue-500 text-white font-semibold shadow-lg hover:scale-105 hover:from-blue-500 hover:to-cyan-600 transition-all duration-300">
+
+                <div className="flex flex-col sm:flex-row gap-5 mt-4 justify-center">
+                    <button className="px-8 py-3 rounded-full bg-gradient-to-r from-cyan-700 to-blue-500 text-white font-semibold shadow-lg hover:scale-105 hover:from-blue-500 hover:to-cyan-700 hover:translate-y-1 transition-all duration-300">
                     My Resume
                     </button>
-                    <button className="px-8 py-3 rounded-lg bg-white/10 text-cyan-300 font-semibold border border-cyan-400 shadow hover:bg-cyan-600 hover:text-white transition-all duration-300">
+                    <button className="px-8 py-3 rounded-lg bg-white/10 text-cyan-300 font-semibold border border-cyan-400 shadow hover:bg-cyan-800 hover:text-white transition-all duration-300">
                     Get in Touch
                     </button>
                 </div>
             </section>
             {/* About Section */}
-            <section className="glass max-w-5xl mx-auto my-16 p-10 fade-in" id='about'>
-                <h2 className="text-3xl font-bold mb-4 text-cyan-300">About Me</h2>
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-8'>
+            <section className="max-w-5xl mx-auto my-7 pt-17 fade-in" id='about'>
+                <h2 className="text-3xl font-bold text-center mb-10 text-cyan-300">About Me</h2>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-8 items-center p-8 my-15 border border-cyan-300/20 shadow-lg shadow-cyan-400/10 rounded-xl transition-all duration-300'>
                     <div className='flex justify-center md:justify-start'>
                         {/* Profile image placeholder, can be replaced later */}
                         <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 border-4 border-blue-900 shadow-lg flex items-center justify-center text-3xl font-bold text-white">SA</div>
                     </div>
                     <div className='md:col-span-2'>
-                        <h3 className="text-xl font-semibold mb-2 text-blue-200">Software Engineer</h3>
-                        <p className="text-blue-100 mb-2">I am a software developer with a strong foundation in full-stack development (React.js, Node.js, Flutter) and a growing expertise in cloud computing. I enjoy building scalable, user-friendly applications and optimizing backend systems for performance and efficiency.</p>
-                        <p className="text-blue-100">I thrive in collaborative, fast-paced environments where I can solve real-world problems, contribute meaningful solutions, and continue learning. My goal is to merge software development and cloud computing to build robust, scalable systems that drive innovation.</p>
+                        <h3 className="text-xl font-semibold mb-4 text-white-100">Software Engineer</h3>
+                        <p className="text-blue-100 text-base leading-tight mb-4">I am a software developer with a strong foundation in full-stack development (React.js, Node.js, Flutter) and a growing expertise in cloud computing. I enjoy building scalable, user-friendly applications and optimizing backend systems for performance and efficiency.</p>
+                        <p className="text-blue-100 text-base leading-tight">I thrive in collaborative, fast-paced environments where I can solve real-world problems, contribute meaningful solutions, and continue learning. My goal is to merge software development and cloud computing to build robust, scalable systems that drive innovation.</p>
                     </div>
                 </div>
                 <SkillTabs />
-                <div className="mt-8">
-                    <h3 className="text-xl font-semibold text-cyan-300 mb-4">Interests & Passions</h3>
+                <div className="mt-10 p-7 pb-10 border border-cyan-300/20 shadow-lg shadow-cyan-400/10 rounded-xl transition-all duration-300">
+                    <h2 className="text-xl font-semibold text-white-100 mb-4">Interests & Passions</h2>
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>      
-                        <div className='col-span-1 glass p-4'>
-                            <h4 className="font-bold text-blue-200 mb-1">Technology & Innovation</h4> 
+                        <div className='p-4 bg-blue-900/30 rounded-xl border border-blue-500/10 transition-all duration-300 hover:scale-105'>
+                            <h4 className="font-bold text-cyan-300 mb-1">Technology & Innovation</h4> 
                             <p className="text-blue-100">Passionate about AI, blockchain, and cloud computing, always exploring emerging trends and their real-world impact.</p>
                         </div>
-                        <div className='col-span-1 glass p-4'>
-                            <h4 className="font-bold text-blue-200 mb-1">Music</h4> 
+                        <div className='p-4 bg-blue-900/20 rounded-xl border border-blue-500/10 transition-all duration-300 hover:scale-105'>
+                            <h4 className="font-bold text-cyan-300 mb-1">Music</h4> 
                             <p className="text-blue-100">A fan of diverse genres that inspire creativity and enhance focus during development sessions.</p>
                         </div>
-                        <div className='col-span-1 glass p-4'>
-                            <h4 className="font-bold text-blue-200 mb-1">Movies & History</h4> 
+                        <div className='p-4 bg-blue-900/20 rounded-xl border border-blue-500/10 transition-all duration-300 hover:scale-105'>
+                            <h4 className="font-bold text-cyan-300 mb-1">Movies & History</h4> 
                             <p className="text-blue-100">Enjoy historical films, thrillers, and documentaries that explore significant events and untold stories.</p>
                         </div>
                     </div>
