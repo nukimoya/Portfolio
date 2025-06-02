@@ -79,6 +79,12 @@ const LandingPage = () => {
                     Get in Touch
                     </button>
                 </div>
+
+                <div className='mt-10 bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce'>
+                    <div className='w-6 h-10 border-2 border-slate-300 rounded-full flex justify-center'>
+                        <div className='w-1 h-3 bg-slate-400 rounded-full mt-2 animate-pulse'></div>
+                    </div>
+                </div>
             </section>
             {/* About Section */}
             <section className="max-w-5xl mx-auto my-7 pt-17 fade-in" id='about'>
@@ -99,24 +105,24 @@ const LandingPage = () => {
                     <h2 className="text-xl font-semibold text-white-100 mb-4">Interests & Passions</h2>
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>      
                         <div className='p-4 bg-blue-900/30 rounded-xl border border-blue-500/10 transition-all duration-300 hover:scale-105'>
-                            <h4 className="font-bold text-cyan-300 mb-1">Technology & Innovation</h4> 
+                            <h4 className="text-cyan-300 mb-1">Technology & Innovation</h4> 
                             <p className="text-blue-100">Passionate about AI, blockchain, and cloud computing, always exploring emerging trends and their real-world impact.</p>
                         </div>
                         <div className='p-4 bg-blue-900/20 rounded-xl border border-blue-500/10 transition-all duration-300 hover:scale-105'>
-                            <h4 className="font-bold text-cyan-300 mb-1">Music</h4> 
+                            <h4 className="text-cyan-300 mb-1">Music</h4> 
                             <p className="text-blue-100">A fan of diverse genres that inspire creativity and enhance focus during development sessions.</p>
                         </div>
                         <div className='p-4 bg-blue-900/20 rounded-xl border border-blue-500/10 transition-all duration-300 hover:scale-105'>
-                            <h4 className="font-bold text-cyan-300 mb-1">Movies & History</h4> 
+                            <h4 className="text-cyan-300 mb-1">Movies & History</h4> 
                             <p className="text-blue-100">Enjoy historical films, thrillers, and documentaries that explore significant events and untold stories.</p>
                         </div>
                     </div>
                 </div>
             </section>
             {/* Projects Section */}
-            <section className="glass max-w-6xl mx-auto my-16 p-10 fade-in" id='projects'>
-                <h2 className="text-3xl font-bold mb-4 text-cyan-300">Featured Projects</h2>
-                <p className="text-blue-100 mb-8">A showcase of my recent work in full-stack development, AI integration, and mobile applications</p>
+            <section className="max-w-6xl mx-auto my-16 p-10 fade-in text-center" id='projects'>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-100">Featured Projects</h2>
+                <p className="text-lg sm:text-xl text-blue-200 max-w-2xl mx-auto px-4">A showcase of my recent work in full-stack development, AI integration, and mobile applications</p>
                 <ProjectShowcase projects={projects} />
             </section>
             {/* Skills Section */}
@@ -124,8 +130,6 @@ const LandingPage = () => {
                 <h2 className="text-3xl font-bold text-center mb-2 text-cyan-300">Skills & Expertise</h2>
                 <p className="text-center text-blue-100 mb-6">A comprehensive overview of my technical skills and the tools I use to build innovative solutions</p>
                 <SkillsSection />
-                <h3 className="text-2xl font-bold mt-10 mb-2 text-blue-200">Tech Stack</h3>
-                <p className="text-blue-100 mb-6">The technologies I use to build powerful, scalable, and intelligent applications</p>
                 <TechStack />
                 <ProfessionalSkills/>
                 <div className='mt-8'>

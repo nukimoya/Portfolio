@@ -1,6 +1,6 @@
 # Logs
 logs
-emailconfig.js
+# emailconfig.js
 *.log
 npm-debug.log*
 yarn-debug.log*
