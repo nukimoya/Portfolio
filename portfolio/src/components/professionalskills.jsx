@@ -9,17 +9,17 @@ const softSkills = [
 
 export default function ProfessionalSkills() {
   return (
-    <div className="text-white">
-      <h2 className="text-2xl font-bold mb-2">Professional Skills</h2>
-      <p className="text-gray-400 mb-4">
+    <div className="bg-navy-800/30 backdrop-blur-sm text-center rounded-2xl p-8 my-15 border border-blue-500/20">
+      <h2 className="text-2xl lg:text-3xl text-white font-bold mb-4">Professional Skills</h2>
+      <p className="text-blue-200 mb-4">
         Essential soft skills that complement my technical expertise
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {softSkills.map((skill, index) => (
-          <div key={index} className="col-span-1 flex items-start gap-2">
-            <span className="w-2 h-2 mt-2 bg-cyan-400 rounded-full" />
-            <p>{skill}</p>
+          <div key={index} className="col-span-1 flex items-center gap-3 p-4 bg-navy-700/30 rounded-lg border border-blue-500/10 hover:border-cyan-400/30 transition-colors duration-300">
+            <div className="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-599 rounded-full flex-shrink-0" />
+            <span className="text-blue-100 text-sm font-medium">{skill}</span>
           </div>
         ))}
       </div>

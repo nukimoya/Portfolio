@@ -13,6 +13,8 @@ import ProjectShowcase from '../components/projectshowcase'
 import projects from '../components/projects';
 import SkillTabs from '../components/aboutcategories'
 import Navbar from '../components/navbar'
+import CurrentlyLearning from '../components/currentlylearning';
+import InterestsSection from '../components/interestsSection';
 
 const LandingPage = () => {
     const formRef = useRef(null);
@@ -46,7 +48,7 @@ const LandingPage = () => {
             <svg className="blob blob-4" style={{top: '70%', left: '10%', width: '200px', height: '200px', position: 'absolute'}} viewBox="0 0 400 400" fill="none"><ellipse cx="200" cy="200" rx="200" ry="200" fill="#4b3c6e"/></svg> 
             <Navbar />
             {/* Hero Section */}
-            <section className='flex flex-col items-center justify-center text-center pt-32 pb-20 relative z-10 fade-in' 
+            <section className='flex flex-col items-center justify-center text-center pt-35 pb-10 relative z-10 fade-in' 
                 id='hero'>
                 <h1 className="text-7xl md:text-7xl font-extrabold text-white bg-clip-text drop-shadow-lg mb-10 mt-15 tracking-tight">
                     Samuel Adelakun
@@ -86,6 +88,7 @@ const LandingPage = () => {
                     </div>
                 </div>
             </section>
+
             {/* About Section */}
             <section className="max-w-5xl mx-auto my-7 pt-17 fade-in" id='about'>
                 <h2 className="text-3xl font-bold text-center mb-10 text-cyan-300">About Me</h2>
@@ -101,50 +104,35 @@ const LandingPage = () => {
                     </div>
                 </div>
                 <SkillTabs />
-                <div className="mt-10 p-7 pb-10 border border-cyan-300/20 shadow-lg shadow-cyan-400/10 rounded-xl transition-all duration-300">
-                    <h2 className="text-xl font-semibold text-white-100 mb-4">Interests & Passions</h2>
-                    <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>      
-                        <div className='p-4 bg-blue-900/30 rounded-xl border border-blue-500/10 transition-all duration-300 hover:scale-105'>
-                            <h4 className="text-cyan-300 mb-1">Technology & Innovation</h4> 
-                            <p className="text-blue-100">Passionate about AI, blockchain, and cloud computing, always exploring emerging trends and their real-world impact.</p>
-                        </div>
-                        <div className='p-4 bg-blue-900/20 rounded-xl border border-blue-500/10 transition-all duration-300 hover:scale-105'>
-                            <h4 className="text-cyan-300 mb-1">Music</h4> 
-                            <p className="text-blue-100">A fan of diverse genres that inspire creativity and enhance focus during development sessions.</p>
-                        </div>
-                        <div className='p-4 bg-blue-900/20 rounded-xl border border-blue-500/10 transition-all duration-300 hover:scale-105'>
-                            <h4 className="text-cyan-300 mb-1">Movies & History</h4> 
-                            <p className="text-blue-100">Enjoy historical films, thrillers, and documentaries that explore significant events and untold stories.</p>
-                        </div>
-                    </div>
-                </div>
+                <InterestsSection />
             </section>
+
             {/* Projects Section */}
-            <section className="max-w-6xl mx-auto my-16 p-10 fade-in text-center" id='projects'>
+            <section className="max-w-6xl mx-auto my-16 p-10 pt-20 fade-in text-center" id='projects'>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-100">Featured Projects</h2>
                 <p className="text-lg sm:text-xl text-blue-200 max-w-2xl mx-auto px-4">A showcase of my recent work in full-stack development, AI integration, and mobile applications</p>
                 <ProjectShowcase projects={projects} />
             </section>
+
             {/* Skills Section */}
-            <section className="glass max-w-6xl mx-auto my-16 p-10 fade-in" id='skills'>
+            <section className="max-w-6xl mx-auto my-16 p-10 pt-20 fade-in" id='skills'>
                 <h2 className="text-3xl font-bold text-center mb-2 text-cyan-300">Skills & Expertise</h2>
                 <p className="text-center text-blue-100 mb-6">A comprehensive overview of my technical skills and the tools I use to build innovative solutions</p>
                 <SkillsSection />
                 <TechStack />
                 <ProfessionalSkills/>
-                <div className='mt-8'>
-                    <h3 className="text-lg font-semibold text-cyan-300 mb-2">Currently Learning</h3>
-                    <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
-                        <div className='col-span-1 glass p-4'>AWS Cloud Practitioner</div>
-                        <div className='col-span-1 glass p-4'>Cloud Architecture</div>
-                        <div className='col-span-1 glass p-4'>Artificial Intelligence</div>
-                    </div>
-                </div>
+                <CurrentlyLearning />
             </section>
+
             {/* Contact Section */}
-            <section className="glass max-w-5xl mx-auto my-16 p-10 fade-in" id='contact'>
-                <h1 className="text-3xl font-bold text-cyan-300 mb-4">Let's Connect</h1>
-                <p className="text-blue-100 mb-8">Have an exciting project in mind or want to explore collaboration opportunities? I'd love to hear from you and discuss how we can bring your vision to life.</p>
+            <section className="max-w-5xl mx-auto my-16 p-10 pt-20 fade-in" id='contact'>
+                <div className='text-center '>
+                    <h1 className="text-4xl lg:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-100">Let's Connect</h1>
+                    <p className="text-xl text-blue-200 max-w-3xl mx-auto">Have an exciting project in mind or want to explore collaboration 
+                        opportunities? I'd love to hear from you and discuss how we can bring your vision to life.
+                    </p>
+                </div>
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-8">
                     {/* Left Section */}
                     <div>
@@ -219,6 +207,7 @@ const LandingPage = () => {
                     </div>
                 </div>
             </section>
+
             {/* Footer */}
             <footer className='glass max-w-6xl mx-auto my-16 p-10 grid grid-cols-1 md:grid-cols-4 gap-8 fade-in'>
                 <div className="md:col-span-2">
