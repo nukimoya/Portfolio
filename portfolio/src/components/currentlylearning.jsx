@@ -6,7 +6,7 @@ const topics = [
   
   export default function CurrentlyLearning() {
     return (
-    <div className="text-center mt-10">
+    <div className="text-center mt-20">
       <div className="inline-block bg-gradient-to-r from-blue-600/20 to-cyan-500/20 backdrop-blur-sm rounded-xl p-6 border border-blue-500/30">
         <h2 className="text-2xl lg:text-3xl text-white font-bold mb-4">Currently Learning</h2>
   

@@ -10,12 +10,10 @@ const navLinks = [
 
 const socialLinks = [
   {
-    href: 'https://x.com/ayothemsft',
-    label: 'X',
+    href: 'https://linkedin.com/in/samuel-adelakun-ba1a2a346',
+    label: 'LinkedIn',
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 sm:w-6 sm:h-6">
-        <path d="M20.49 3.5h-3.89l-3.37 4.35-3.64-4.35H2.62l6.81 8.23-6.81 8.77h3.89l3.61-4.65 3.88 4.65h6.49l-7.25-8.94 7.25-8.01z"></path>
-      </svg>
+      <FaLinkedin size={22} />
     ),
   },
   {
@@ -26,10 +24,12 @@ const socialLinks = [
     ),
   },
   {
-    href: 'https://linkedin.com/in/samuel-adelakun-ba1a2a346',
-    label: 'LinkedIn',
+    href: 'https://x.com/ayothemsft',
+    label: 'X',
     icon: (
-      <FaLinkedin size={22} />
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 sm:w-6 sm:h-6">
+        <path d="M20.49 3.5h-3.89l-3.37 4.35-3.64-4.35H2.62l6.81 8.23-6.81 8.77h3.89l3.61-4.65 3.88 4.65h6.49l-7.25-8.94 7.25-8.01z"></path>
+      </svg>
     ),
   },
 ];
