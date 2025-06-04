@@ -118,8 +118,8 @@ const LandingPage = () => {
 
             {/* Skills Section */}
             <section className="relative max-w-6xl mx-auto p-10 pt-20 fade-in" id='skills'>
-                <div class="absolute top-20 -right-20 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl"></div>
-                <div class="absolute bottom-20 -left-20 w-60 h-60 bg-blue-500/10 rounded-full blur-3xl"></div>
+                <div className="absolute top-20 -right-20 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-20 -left-20 w-60 h-60 bg-blue-500/10 rounded-full blur-3xl"></div>
                 <div className='text-center mb-13'>
                     <div className='inline-block'>
                         <h2 className="text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-whit to-cyan-100 mb-6 text-white">Skills & Expertise</h2>
@@ -143,11 +143,11 @@ const LandingPage = () => {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-8">
                     {/* Left Section */}
-                    <div class="space-y-8">
+                    <div className="space-y-8">
                     {/* <!-- Header & Description --> */}
                     <div>
-                        <h3 class="text-2xl lg:text-3xl font-bold text-white mb-6">Get In Touch</h3>
-                        <p class="text-blue-200 text-lg mb-8">
+                        <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6">Get In Touch</h3>
+                        <p className="text-blue-200 text-lg mb-8">
                         I'm currently available for freelance projects and full-time opportunities.
                         Whether you have a question, want to start a project, or just want to say hello,
                         I'd be happy to hear from you.
@@ -155,58 +155,58 @@ const LandingPage = () => {
                     </div>
 
                     {/* <!-- Contact Cards --> */}
-                    <div class="space-y-6">
+                    <div className="space-y-6">
                         {/* <!-- Email --> */}
                         <a href="mailto:sayomikun123@gmail.com"
-                        class="flex items-center gap-4 p-4 bg-navy-800/30 backdrop-blur-sm rounded-xl border border-blue-500/20 hover:border-cyan-400/40 transition-all duration-300 hover:translate-x-2 group">
-                        <div class="w-12 h-12 bg-gradient-to-r from-red-500 to-orange-400 rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-envelope text-2xl"></i>
+                        className="flex items-center gap-4 p-4 bg-navy-800/30 backdrop-blur-sm rounded-xl border border-blue-500/20 hover:border-cyan-400/40 transition-all duration-300 hover:translate-x-2 group">
+                        <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-orange-400 rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+                            <i className="fas fa-envelope text-2xl"></i>
                         </div>
                         <div>
-                            <h4 class="text-white font-medium">Email</h4>
-                            <p class="text-blue-200 text-sm">sayomikun123@gmail.com</p>
+                            <h4 className="text-white font-medium">Email</h4>
+                            <p className="text-blue-200 text-sm">sayomikun123@gmail.com</p>
                         </div>
                         </a>
 
                         {/* <!-- Phone --> */}
                         <a href="tel:"
-                        class="flex items-center gap-4 p-4 bg-navy-800/30 backdrop-blur-sm rounded-xl border border-blue-500/20 hover:border-cyan-400/40 transition-all duration-300 hover:translate-x-2 group">
-                        <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-400 rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-phone-alt text-2xl"></i>
+                        className="flex items-center gap-4 p-4 bg-navy-800/30 backdrop-blur-sm rounded-xl border border-blue-500/20 hover:border-cyan-400/40 transition-all duration-300 hover:translate-x-2 group">
+                        <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-400 rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+                            <i className="fas fa-phone-alt text-2xl"></i>
                         </div>
                         <div>
-                            <h4 class="text-white font-medium">Phone</h4>
-                            <p class="text-blue-200 text-sm">+1 (925) 819-4794</p>
+                            <h4 className="text-white font-medium">Phone</h4>
+                            <p className="text-blue-200 text-sm">+1 (925) 819-4794</p>
                         </div>
                         </a>
 
                         {/* <!-- Location --> */}
                         <a href="#"
-                        class="flex items-center gap-4 p-4 bg-navy-800/30 backdrop-blur-sm rounded-xl border border-blue-500/20 hover:border-cyan-400/40 transition-all duration-300 hover:translate-x-2 group">
-                        <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-400 rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
-                            <i class="fas fa-map-marker-alt text-2xl"></i>
+                        className="flex items-center gap-4 p-4 bg-navy-800/30 backdrop-blur-sm rounded-xl border border-blue-500/20 hover:border-cyan-400/40 transition-all duration-300 hover:translate-x-2 group">
+                        <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-400 rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+                            <i className="fas fa-map-marker-alt text-2xl"></i>
                         </div>
                         <div>
-                            <h4 class="text-white font-medium">Location</h4>
-                            <p class="text-blue-200 text-sm">San Ramon, CA</p>
+                            <h4 className="text-white font-medium">Location</h4>
+                            <p className="text-blue-200 text-sm">San Ramon, CA</p>
                         </div>
                         </a>
                     </div>
 
                     {/* <!-- Social Links --> */}
-                    <div class="pt-6">
-                        <h4 class="text-white font-medium mb-4">Follow Me</h4>
-                        <div class="flex gap-4">
+                    <div className="pt-6">
+                        <h4 className="text-white font-medium mb-4">Follow Me</h4>
+                        <div className="flex gap-4">
                         {/* <!-- LinkedIn --> */}
                         <a href="https://www.linkedin.com/in/adeyemi-aladesuyi-426a9b244/"
-                            class="w-12 h-12 bg-navy-800/50 backdrop-blur-sm rounded-lg border border-blue-500/20 flex items-center justify-center text-blue-200 hover:text-blue-400 transition-all duration-300 hover:border-cyan-400/40 hover:translate-y-1"
+                            className="w-12 h-12 bg-navy-800/50 backdrop-blur-sm rounded-lg border border-blue-500/20 flex items-center justify-center text-blue-200 hover:text-blue-400 transition-all duration-300 hover:border-cyan-400/40 hover:translate-y-1"
                             title="LinkedIn">
                             <FaLinkedin size={22} />
                         </a>
 
                         {/* <!-- GitHub --> */}
                         <a href="https://github.com/nukimoya"
-                            class="w-12 h-12 bg-navy-800/50 backdrop-blur-sm rounded-lg border border-blue-500/20 flex items-center justify-center text-blue-200 hover:text-gray-300 transition-all duration-300 hover:border-cyan-400/40 hover:translate-y-1"
+                            className="w-12 h-12 bg-navy-800/50 backdrop-blur-sm rounded-lg border border-blue-500/20 flex items-center justify-center text-blue-200 hover:text-gray-300 transition-all duration-300 hover:border-cyan-400/40 hover:translate-y-1"
                             title="GitHub">
                                 <FaGithub size={22} />
                             
@@ -215,7 +215,7 @@ const LandingPage = () => {
 
                         {/* <!-- twitter --> */}
                         <a href="https://x.com/ayothemsft"
-                            class="w-12 h-12 bg-navy-800/50 backdrop-blur-sm rounded-lg border border-blue-500/20 flex items-center justify-center text-blue-200 hover:text-gray-300 transition-all duration-300 hover:border-cyan-400/40 hover:translate-y-1"
+                            className="w-12 h-12 bg-navy-800/50 backdrop-blur-sm rounded-lg border border-blue-500/20 flex items-center justify-center text-blue-200 hover:text-gray-300 transition-all duration-300 hover:border-cyan-400/40 hover:translate-y-1"
                             title="X">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 sm:w-6 sm:h-6">
                                 <path d="M20.49 3.5h-3.89l-3.37 4.35-3.64-4.35H2.62l6.81 8.23-6.81 8.77h3.89l3.61-4.65 3.88 4.65h6.49l-7.25-8.94 7.25-8.01z"></path>
@@ -239,46 +239,46 @@ const LandingPage = () => {
                         <h2 className="text-2xl font-bold mb-2 text-white">Send Me a Message</h2>
                         <p className="mb-2 text-blue-200">Fill out the form below and I'll get back to you as soon as possible.</p>
                     </div>
-                    <form class="space-y-6" id="contact-form" ref={formRef} onSubmit={handleSubmit}>
-                        <div class="grid sm:grid-cols-2 gap-6">
+                    <form className="space-y-6" id="contact-form" ref={formRef} onSubmit={handleSubmit}>
+                        <div className="grid sm:grid-cols-2 gap-6">
                             {/* <!-- Name Input --> */}
                             <div>
-                            <label for="name" class="block text-blue-200 text-sm font-medium mb-2">Your Name *</label>
-                            <div class="relative">
-                                <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 text-blue-400 text-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
+                            <label for="name" className="block text-blue-200 text-sm font-medium mb-2">Your Name *</label>
+                            <div className="relative">
+                                <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 text-blue-400 text-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1em" width="1em">
                                 <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/>
                                 </svg>
                                 <input id="name" name="name" type="text" required placeholder="Enter your name"
-                                    class="w-full pl-10 pr-4 py-3 bg-navy-700/50 border border-blue-500/30 rounded-lg text-white placeholder-blue-300 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors duration-300" />
+                                    className="w-full pl-10 pr-4 py-3 bg-navy-700/50 border border-blue-500/30 rounded-lg text-white placeholder-blue-300 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors duration-300" />
                             </div>
                             </div>
 
                             {/* <!-- Email Input --> */}
                             <div>
-                            <label for="email" class="block text-blue-200 text-sm font-medium mb-2">Your Email *</label>
-                            <div class="relative">
+                            <label for="email" className="block text-blue-200 text-sm font-medium mb-2">Your Email *</label>
+                            <div className="relative">
                                 <svg stroke="currentColor"
-                                    fill="currentColor" class="absolute left-3 top-1/2 transform -translate-y-1/2 text-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
+                                    fill="currentColor" className="absolute left-3 top-1/2 transform -translate-y-1/2 text-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em">
                                 <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/>
                                 </svg>
                                 <input id="email" name="email" type="email" required placeholder="Enter your email"
-                                    class="w-full pl-10 pr-4 py-3 bg-navy-700/50 border border-blue-500/30 rounded-lg text-white placeholder-blue-300 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors duration-300" />
+                                    className="w-full pl-10 pr-4 py-3 bg-navy-700/50 border border-blue-500/30 rounded-lg text-white placeholder-blue-300 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors duration-300" />
                             </div>
                             </div>
                         </div>
 
                         {/* <!-- Subject Input --> */}
                         <div>
-                            <label for="subject" class="block text-blue-200 text-sm font-medium mb-2">Subject *</label>
+                            <label for="subject" className="block text-blue-200 text-sm font-medium mb-2">Subject *</label>
                             <input id="subject" name="subject" type="text" required placeholder="What's this about?"
-                                class="w-full px-4 py-3 bg-navy-700/50 border border-blue-500/30 rounded-lg text-white placeholder-blue-300 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors duration-300" />
+                                className="w-full px-4 py-3 bg-navy-700/50 border border-blue-500/30 rounded-lg text-white placeholder-blue-300 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors duration-300" />
                         </div>
 
                         {/* <!-- Message Textarea --> */}
                         <div>
-                            <label for="message" class="block text-blue-200 text-sm font-medium mb-2">Message *</label>
+                            <label for="message" className="block text-blue-200 text-sm font-medium mb-2">Message *</label>
                             <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or idea..."
-                                    class="w-full px-4 py-3 bg-navy-700/50 border border-blue-500/30 rounded-lg text-white placeholder-blue-300 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors duration-300 resize-vertical"></textarea>
+                                    className="w-full px-4 py-3 bg-navy-700/50 border border-blue-500/30 rounded-lg text-white placeholder-blue-300 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-colors duration-300 resize-vertical"></textarea>
                         </div>
 
                         {/* <!-- Submit Button --> */}
@@ -343,14 +343,14 @@ const LandingPage = () => {
                                 Building scalable systems and crafting seamless digital experiences.
                                 Always learning, always growing.
                              </p>
-                             <div class="flex items-center gap-4">
+                             <div className="flex items-center gap-4">
                                 {/* <!-- LinkedIn Link --> */}
                                 <a 
                                     href="https://www.linkedin.com/in/samuel-adelakun-ba1a2a346" 
                                     target="_blank" 
                                     rel="noopener noreferrer" 
                                     aria-label="LinkedIn" 
-                                    class="flex items-center justify-center w-10 h-10 rounded-lg bg-navy-800/50 backdrop-blur-sm border border-blue-500/20 text-blue-200 hover:text-white hover:border-blue-400/40 hover:bg-navy-700/60 transition-all duration-300 hover:scale-105"
+                                    className="flex items-center justify-center w-10 h-10 rounded-lg bg-navy-800/50 backdrop-blur-sm border border-blue-500/20 text-blue-200 hover:text-white hover:border-blue-400/40 hover:bg-navy-700/60 transition-all duration-300 hover:scale-105"
                                 >
                                     <svg 
                                     stroke="currentColor" 
@@ -377,7 +377,7 @@ const LandingPage = () => {
                                     target="_blank" 
                                     rel="noopener noreferrer" 
                                     aria-label="GitHub" 
-                                    class="flex items-center justify-center w-10 h-10 rounded-lg bg-navy-800/50 backdrop-blur-sm border border-blue-500/20 text-blue-200 hover:text-white hover:border-blue-400/40 hover:bg-navy-700/60 transition-all duration-300 hover:scale-105"
+                                    className="flex items-center justify-center w-10 h-10 rounded-lg bg-navy-800/50 backdrop-blur-sm border border-blue-500/20 text-blue-200 hover:text-white hover:border-blue-400/40 hover:bg-navy-700/60 transition-all duration-300 hover:scale-105"
                                 >
                                     <svg 
                                     stroke="currentColor" 
@@ -419,7 +419,7 @@ const LandingPage = () => {
                                     target="_blank" 
                                     rel="noopener noreferrer" 
                                     aria-label="Twitter" 
-                                    class="flex items-center justify-center w-10 h-10 rounded-lg bg-navy-800/50 backdrop-blur-sm border border-blue-500/20 text-blue-200 hover:text-white hover:border-blue-400/40 hover:bg-navy-700/60 transition-all duration-300 hover:scale-105"
+                                    className="flex items-center justify-center w-10 h-10 rounded-lg bg-navy-800/50 backdrop-blur-sm border border-blue-500/20 text-blue-200 hover:text-white hover:border-blue-400/40 hover:bg-navy-700/60 transition-all duration-300 hover:scale-105"
                                 >
                                     <svg 
                                     stroke="currentColor" 
@@ -469,7 +469,7 @@ const LandingPage = () => {
                                 </p>
                                 <a href="#contact" className="inline-flex items-center gap-2 text-blue-300 hover:text-blue-100 transition-colors duration-300 text-sm font-medium group">
                                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" 
-                                    class="text-xs group-hover:scale-110 transition-transform duration-300" height="1em"
+                                    className="text-xs group-hover:scale-110 transition-transform duration-300" height="1em"
                                     width="1em" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5
                                         48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7

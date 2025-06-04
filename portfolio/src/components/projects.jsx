@@ -1,8 +1,29 @@
+import codequestImage1 from '/projects/codecraft/landing.png';
+import codequestImage2 from '/projects/codecraft/login.png';
+import codequestImage3 from '/projects/codecraft/dashboard.png';
+import codequestImage4 from '/projects/codecraft/not enrolled in any classroom.png';
+import codequestImage5 from '/projects/codecraft/javascript essentials section of javascript classroom.png';
+import codequestImage6 from '/projects/codecraft/begin test.png';
+import codequestImage7 from '/projects/codecraft/quiz question.png';
+import codequestImage8 from '/projects/codecraft/test completion.png';
+import codequestImage9 from '/projects/codecraft/wrong.png';
+import codequestImage10 from '/projects/codecraft/progress.png';
+import codequestImage11 from '/projects/codecraft/leaderboard.png';
+import codequestImage12 from '/projects/codecraft/profile.png';
 
+// import codequestImage1 from '../assets/react.svg';
+// import codequestImage1 from '../assets/react.svg';
+// import codequestImage1 from '../assets/react.svg';
+// import codequestImage1 from '../assets/react.svg';
+// import codequestImage1 from '../assets/react.svg';
+// import codequestImage1 from '../assets/react.svg';
+// import codequestImage1 from '../assets/react.svg';
+// import codequestImage1 from '../assets/react.svg';
+// import codequestImage1 from '../assets/react.svg';
 import studyMateImage from '../assets/react.svg'; // Your local image
 import hotelEaseImage1 from '../assets/react.svg';
 import fastfoodImage1 from '../assets/react.svg';
-import codequestImage1 from '../assets/react.svg';
+// import codequestImage1 from '../assets/react.svg';
 
 const projects = [
   {
@@ -12,7 +33,7 @@ const projects = [
     subtitle: 'Gamified Programming Learning Platform',
     project_link: 'https://code-craft-frontend.vercel.app/',
     project_git: 'https://github.com/nukimoya/CodeCraft',
-    images: [codequestImage1, codequestImage1],
+    images: [codequestImage1, codequestImage2, codequestImage3, codequestImage4, codequestImage5, codequestImage6, codequestImage7, codequestImage8, codequestImage9, codequestImage10, codequestImage11, codequestImage12],
     description: 'A gamified e-learning platform for learning Python, Java, and JavaScript via classroom structures with progressive levels and interactive content.',
     features: [
       'Language-specific classrooms with 3 difficulty tiers',

@@ -154,7 +154,7 @@ const ProjectShowcase = ({ projects = [] }) => {
           isReversed={index % 2 !== 0}
         />
       ))}
-      <div class="text-center mt-16 sm:mt-20">
+      <div className="text-center mt-16 sm:mt-20">
         <a href="https://github.com/nukimoya" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-navy-800/50 backdrop-blur-sm border-2 border-blue-400/50 text-blue-200 font-medium rounded-xl hover:bg-blue-500/10 hover:border-cyan-400/70 transition-all duration-300 transform hover:translate-y-1 shadow-lg shadow-navy-900/20 text-sm sm:text-base">
           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512"
             className="text-lg sm:text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
