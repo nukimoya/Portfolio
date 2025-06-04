@@ -11,7 +11,7 @@ const projects = [
     title: 'CodeCraft',
     subtitle: 'Gamified Programming Learning Platform',
     project_link: 'https://code-craft-frontend.vercel.app/',
-    project_git: '',
+    project_git: 'https://github.com/nukimoya/CodeCraft',
     images: [codequestImage1, codequestImage1],
     description: 'A gamified e-learning platform for learning Python, Java, and JavaScript via classroom structures with progressive levels and interactive content.',
     features: [
