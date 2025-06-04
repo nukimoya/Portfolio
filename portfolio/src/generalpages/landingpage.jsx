@@ -110,16 +110,22 @@ const LandingPage = () => {
             </section>
 
             {/* Projects Section */}
-            <section className="max-w-6xl mx-auto my-16 p-10 pt-20 fade-in text-center" id='projects'>
+            <section className="max-w-6xl mx-auto mt-16 p-10 pt-20 fade-in text-center" id='projects'>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-100">Featured Projects</h2>
                 <p className="text-lg sm:text-xl text-blue-200 max-w-2xl mx-auto px-4">A showcase of my recent work in full-stack development, AI integration, and mobile applications</p>
                 <ProjectShowcase projects={projects} />
             </section>
 
             {/* Skills Section */}
-            <section className="max-w-6xl mx-auto my-10 p-10 pt-20 fade-in" id='skills'>
-                <h2 className="text-3xl font-bold text-center mb-2 text-cyan-300">Skills & Expertise</h2>
-                <p className="text-center text-blue-100 mb-6">A comprehensive overview of my technical skills and the tools I use to build innovative solutions</p>
+            <section className="relative max-w-6xl mx-auto p-10 pt-20 fade-in" id='skills'>
+                <div class="absolute top-20 -right-20 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-20 -left-20 w-60 h-60 bg-blue-500/10 rounded-full blur-3xl"></div>
+                <div className='text-center mb-13'>
+                    <div className='inline-block'>
+                        <h2 className="text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-whit to-cyan-100 mb-6 text-white">Skills & Expertise</h2>
+                        <p className="text-xl text-blue-200 max-w-2xl mx-auto mb-6">A comprehensive overview of my technical skills and the tools I use to build innovative solutions</p>
+                    </div>
+                </div>
                 <SkillsSection />
                 <TechStack />
                 <ProfessionalSkills/>
