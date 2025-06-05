@@ -49,6 +49,7 @@ const LandingPage = () => {
             <svg className="blob blob-3" style={{top: '40%', left: '60%', width: '180px', height: '180px', position: 'absolute'}} viewBox="0 0 400 400" fill="none"><ellipse cx="200" cy="200" rx="200" ry="200" fill="#3ec6ff"/></svg> 
             <svg className="blob blob-4" style={{top: '70%', left: '10%', width: '200px', height: '200px', position: 'absolute'}} viewBox="0 0 400 400" fill="none"><ellipse cx="200" cy="200" rx="200" ry="200" fill="#4b3c6e"/></svg> 
             <Navbar />
+
             {/* Hero Section */}
             <section className='flex flex-col items-center justify-center text-center pt-35 pb-10 relative z-10 fade-in' 
                 id='hero'>
@@ -70,18 +71,19 @@ const LandingPage = () => {
                     />
                 </div>
 
-                <div className="max-w-3xl text-sm md:text-lg text-blue-100 mt-2 mb-10 px-5 py-6 bg-transparent border border-white/10 shadow-[0_15px_30px_-5px_rgba(0,0,0,0.5)] rounded-lg backdrop-blur-lg">
+                <div className="max-w-3xl text-sm md:text-lg text-blue-100 mt-2 mb-10 px-5 py-6 bg-transparent border border-white/10 shadow-[0_15px_30px_-5px_rgba(0,0,0,0.5)] rounded-2xl backdrop-blur-lg">
                     Building scalable systems that solve real problems. Computer Science graduate with 2+ years of full-stack experience in TypeScript, React, Node.js, Django & AI-Driven Development. Passionate about cloud-native development, AI-powered solutions, and crafting seamless digital experiences.
                 </div>
 
 
                 <div className="flex flex-col sm:flex-row gap-5 mt-4 justify-center">
-                    <button className="px-8 py-3 rounded-full bg-gradient-to-r from-cyan-700 to-blue-500 text-white font-semibold shadow-lg hover:scale-105 hover:from-blue-500 hover:to-cyan-700 hover:translate-y-1 transition-all duration-300">
+                    <a href="/assets/JavaScript - functions.pdf" download="Samuel_Adelakun_Resume"
+                     className="px-8 py-3 rounded-full bg-gradient-to-r from-blue-700 to-blue-600 text-white font-semibold shadow-lg hover:scale-105 hover:from-emerald-500 hover:to-emerald-400 hover:to-blue-500 hover:translate-y-2 transition-all duration-300">
                     My Resume
-                    </button>
-                    <button className="px-8 py-3 rounded-lg bg-white/10 text-cyan-300 font-semibold border border-cyan-400 shadow hover:bg-cyan-800 hover:text-white transition-all duration-300">
+                    </a>
+                    <a href="#contact" className="px-8 py-3 rounded-lg bg-white/10 text-cyan-300 font-semibold border border-cyan-400 shadow hover:bg-cyan-800 hover:text-white transition-all duration-300">
                     Get in Touch
-                    </button>
+                    </a>
                 </div>
 
                 <div className='mt-10 bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce'>
