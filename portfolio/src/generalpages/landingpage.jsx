@@ -40,7 +40,7 @@ const LandingPage = () => {
     };
 
     return (
-    <div className="relative min-h-screen overflow-x-hidden px-2 sm:px-0">
+    <div className="relative min-h-screen overflow-x-hidden px-2 sm:px-0 scroll-smooth">
         {/* Animated Gradient Background */}
         <div className="animated-bg" />
             {/* SVG Blobs - more, lighter, unique movement */}
@@ -95,14 +95,18 @@ const LandingPage = () => {
 
             {/* About Section */}
             <section className="max-w-5xl mx-auto my-7 pt-10 sm:pt-17 fade-in px-2 sm:px-0" id='about'>
-                <h2 className="text-3xl font-bold text-center mb-10 text-cyan-300">About Me</h2>
+                <div class="text-center mb-16 opacity-0 transform translate-y-4 transition-all duration-700 ease-in-out fade-in">
+                    <h2 className="text-4xl font-bold text-center mb-4 text-white">About Me</h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto"></div>
+                </div>
+                
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-center p-4 sm:p-8 my-10 border border-cyan-300/20 shadow-lg shadow-cyan-400/10 rounded-xl transition-all duration-300'>
                     <div className='flex justify-center'>
                         {/* Profile image placeholder, can be replaced later */}
                         <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 border-4 border-blue-900 shadow-lg flex items-center justify-center text-3xl font-bold text-white">SA</div>
                     </div>
                     <div className='md:col-span-2'>
-                        <h3 className="text-xl font-semibold mb-4 text-white-100">Software Engineer</h3>
+                        <h3 className="text-2xl font-bold mb-4 text-white">Software Engineer</h3>
                         <p className="text-blue-100 text-base leading-tight mb-4">I am a software developer with a strong foundation in full-stack development (React.js, Node.js, Flutter) and a growing expertise in cloud computing. I enjoy building scalable, user-friendly applications and optimizing backend systems for performance and efficiency.</p>
                         <p className="text-blue-100 text-base leading-tight">I thrive in collaborative, fast-paced environments where I can solve real-world problems, contribute meaningful solutions, and continue learning. My goal is to merge software development and cloud computing to build robust, scalable systems that drive innovation.</p>
                     </div>
@@ -113,7 +117,8 @@ const LandingPage = () => {
 
             {/* Projects Section */}
             <section className="max-w-6xl mx-auto mt-10 sm:mt-16 p-4 sm:p-10 pt-16 sm:pt-20 fade-in text-center" id='projects'>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-100">Featured Projects</h2>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2  sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-100">Featured Projects</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto mb-7"></div>
                 <p className="text-lg sm:text-xl text-blue-200 max-w-2xl mx-auto px-4">A showcase of my recent work in full-stack development, AI integration, and mobile applications</p>
                 <ProjectShowcase projects={projects} />
             </section>
@@ -124,7 +129,8 @@ const LandingPage = () => {
                 <div className="absolute bottom-10 sm:bottom-20 -left-10 sm:-left-20 w-40 sm:w-60 h-40 sm:h-60 bg-blue-500/10 rounded-full blur-3xl"></div>
                 <div className='text-center mb-8 sm:mb-13'>
                     <div className='inline-block'>
-                        <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-whit to-cyan-100 mb-4 sm:mb-6 text-white">Skills & Expertise</h2>
+                        <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-whit to-cyan-100 mb-1 sm:mb-6 text-white">Skills & Expertise</h2>
+                        <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto mb-7"></div>
                         <p className="text-base sm:text-xl text-blue-200 max-w-2xl mx-auto mb-4 sm:mb-6">A comprehensive overview of my technical skills and the tools I use to build innovative solutions</p>
                     </div>
                 </div>
@@ -137,7 +143,8 @@ const LandingPage = () => {
             {/* Contact Section */}
             <section className="max-w-5xl mx-auto my-10 sm:my-16 p-4 sm:p-10 pt-16 sm:pt-20 fade-in" id='contact'>
                 <div className='text-center '>
-                    <h1 className="text-4xl lg:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-100">Let's Connect</h1>
+                    <h1 className="text-4xl lg:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-100">Let's Connect</h1>
+                    <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-400 mx-auto mb-6"></div>
                     <p className="text-xl text-blue-200 max-w-3xl mx-auto">Have an exciting project in mind or want to explore collaboration 
                         opportunities? I'd love to hear from you and discuss how we can bring your vision to life.
                     </p>
