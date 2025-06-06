@@ -40,20 +40,20 @@ const LandingPage = () => {
     };
 
     return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-x-hidden px-2 sm:px-0">
         {/* Animated Gradient Background */}
         <div className="animated-bg" />
             {/* SVG Blobs - more, lighter, unique movement */}
-            <svg className="blob blob-1" style={{top: '-60px', left: '-80px', width: '320px', height: '320px', position: 'absolute'}} viewBox="0 0 400 400" fill="none"><ellipse cx="200" cy="200" rx="200" ry="200" fill="#223a5c"/></svg> 
-            {/*<svg className="blob blob-2" style={{bottom: '-80px', right: '-60px', width: '260px', height: '260px', position: 'absolute'}} viewBox="0 0 400 400" fill="none"><ellipse cx="200" cy="200" rx="200" ry="200" fill="#2e5a7a"/></svg> */}
-            <svg className="blob blob-3" style={{top: '40%', left: '60%', width: '180px', height: '180px', position: 'absolute'}} viewBox="0 0 400 400" fill="none"><ellipse cx="200" cy="200" rx="200" ry="200" fill="#3ec6ff"/></svg> 
-            <svg className="blob blob-4" style={{top: '70%', left: '10%', width: '200px', height: '200px', position: 'absolute'}} viewBox="0 0 400 400" fill="none"><ellipse cx="200" cy="200" rx="200" ry="200" fill="#4b3c6e"/></svg> 
+            <svg className="blob blob-1" style={{top: '-60px', left: '-80px', width: '220px', height: '220px', position: 'absolute'}} viewBox="0 0 400 400" fill="none"><ellipse cx="200" cy="200" rx="200" ry="200" fill="#223a5c"/></svg> 
+            {/*<svg className="blob blob-2" style={{bottom: '-80px', right: '-60px', width: '160px', height: '160px', position: 'absolute'}} viewBox="0 0 400 400" fill="none"><ellipse cx="200" cy="200" rx="200" ry="200" fill="#2e5a7a"/></svg> */}
+            <svg className="blob blob-3" style={{top: '40%', left: '60%', width: '120px', height: '120px', position: 'absolute'}} viewBox="0 0 400 400" fill="none"><ellipse cx="200" cy="200" rx="200" ry="200" fill="#3ec6ff"/></svg> 
+            <svg className="blob blob-4" style={{top: '70%', left: '10%', width: '120px', height: '120px', position: 'absolute'}} viewBox="0 0 400 400" fill="none"><ellipse cx="200" cy="200" rx="200" ry="200" fill="#4b3c6e"/></svg> 
             <Navbar />
 
             {/* Hero Section */}
-            <section className='flex flex-col items-center justify-center text-center pt-35 pb-10 relative z-10 fade-in' 
+            <section className='flex flex-col items-center justify-center text-center pt-28 pb-10 relative z-10 fade-in px-2 sm:px-0' 
                 id='hero'>
-                <h1 className="text-7xl md:text-7xl font-extrabold text-white bg-clip-text drop-shadow-lg mb-10 mt-15 tracking-tight">
+                <h1 className="text-4xl xs:text-5xl sm:text-7xl font-extrabold text-white bg-clip-text drop-shadow-lg mb-10 mt-15 tracking-tight">
                     Samuel Adelakun
                 </h1>
 
@@ -71,22 +71,22 @@ const LandingPage = () => {
                     />
                 </div>
 
-                <div className="max-w-3xl text-sm md:text-lg text-blue-100 mt-2 mb-10 px-5 py-6 bg-transparent border border-white/10 shadow-[0_15px_30px_-5px_rgba(0,0,0,0.5)] rounded-2xl backdrop-blur-lg">
+                <div className="max-w-3xl text-xs xs:text-sm md:text-lg text-blue-100 mt-2 mb-10 px-3 py-4 sm:px-5 sm:py-6 bg-transparent border border-white/10 shadow-[0_15px_30px_-5px_rgba(0,0,0,0.5)] rounded-2xl backdrop-blur-lg">
                     Building scalable systems that solve real problems. Computer Science graduate with 2+ years of full-stack experience in TypeScript, React, Node.js, Django & AI-Driven Development. Passionate about cloud-native development, AI-powered solutions, and crafting seamless digital experiences.
                 </div>
 
 
-                <div className="flex flex-col sm:flex-row gap-5 mt-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 mt-4 justify-center w-full max-w-xs sm:max-w-none">
                     <a href="/JavaScript - functions.pdf" download="Samuel_Adelakun_Resume"
-                     className="px-8 py-3 rounded-full bg-gradient-to-r from-blue-700 to-blue-600 text-white font-semibold shadow-lg hover:scale-105 hover:from-emerald-500 hover:to-emerald-400 hover:to-blue-500 hover:translate-y-2 transition-all duration-300">
+                     className="w-full sm:w-auto px-6 sm:px-8 py-3 rounded-full bg-gradient-to-r from-blue-700 to-blue-600 text-white font-semibold shadow-lg hover:scale-105 hover:from-emerald-500 hover:to-emerald-400 hover:to-blue-500 hover:translate-y-2 transition-all duration-300 text-center">
                     My Resume
                     </a>
-                    <a href="#contact" className="px-8 py-3 rounded-lg bg-white/10 text-cyan-300 font-semibold border border-cyan-400 shadow hover:bg-cyan-800 hover:text-white transition-all duration-300">
+                    <a href="#contact" className="w-full sm:w-auto px-6 sm:px-8 py-3 rounded-lg bg-white/10 text-cyan-300 font-semibold border border-cyan-400 shadow hover:bg-cyan-800 hover:text-white transition-all duration-300 text-center">
                     Get in Touch
                     </a>
                 </div>
 
-                <div className='mt-10 bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce'>
+                <div className='mt-8 sm:mt-10 bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce'>
                     <div className='w-6 h-10 border-2 border-slate-300 rounded-full flex justify-center'>
                         <div className='w-1 h-3 bg-slate-400 rounded-full mt-2 animate-pulse'></div>
                     </div>
@@ -94,9 +94,9 @@ const LandingPage = () => {
             </section>
 
             {/* About Section */}
-            <section className="max-w-5xl mx-auto my-7 pt-17 fade-in" id='about'>
+            <section className="max-w-5xl mx-auto my-7 pt-10 sm:pt-17 fade-in px-2 sm:px-0" id='about'>
                 <h2 className="text-3xl font-bold text-center mb-10 text-cyan-300">About Me</h2>
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-8 items-center p-8 my-15 border border-cyan-300/20 shadow-lg shadow-cyan-400/10 rounded-xl transition-all duration-300'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-center p-4 sm:p-8 my-10 border border-cyan-300/20 shadow-lg shadow-cyan-400/10 rounded-xl transition-all duration-300'>
                     <div className='flex justify-center'>
                         {/* Profile image placeholder, can be replaced later */}
                         <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 border-4 border-blue-900 shadow-lg flex items-center justify-center text-3xl font-bold text-white">SA</div>
@@ -112,20 +112,20 @@ const LandingPage = () => {
             </section>
 
             {/* Projects Section */}
-            <section className="max-w-6xl mx-auto mt-16 p-10 pt-20 fade-in text-center" id='projects'>
+            <section className="max-w-6xl mx-auto mt-10 sm:mt-16 p-4 sm:p-10 pt-16 sm:pt-20 fade-in text-center" id='projects'>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-100">Featured Projects</h2>
                 <p className="text-lg sm:text-xl text-blue-200 max-w-2xl mx-auto px-4">A showcase of my recent work in full-stack development, AI integration, and mobile applications</p>
                 <ProjectShowcase projects={projects} />
             </section>
 
             {/* Skills Section */}
-            <section className="relative max-w-6xl mx-auto p-10 pt-20 fade-in" id='skills'>
-                <div className="absolute top-20 -right-20 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-20 -left-20 w-60 h-60 bg-blue-500/10 rounded-full blur-3xl"></div>
-                <div className='text-center mb-13'>
+            <section className="relative max-w-6xl mx-auto p-4 sm:p-10 pt-16 sm:pt-20 fade-in" id='skills'>
+                <div className="absolute top-10 sm:top-20 -right-10 sm:-right-20 w-28 sm:w-40 h-28 sm:h-40 bg-cyan-500/10 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-10 sm:bottom-20 -left-10 sm:-left-20 w-40 sm:w-60 h-40 sm:h-60 bg-blue-500/10 rounded-full blur-3xl"></div>
+                <div className='text-center mb-8 sm:mb-13'>
                     <div className='inline-block'>
-                        <h2 className="text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-whit to-cyan-100 mb-6 text-white">Skills & Expertise</h2>
-                        <p className="text-xl text-blue-200 max-w-2xl mx-auto mb-6">A comprehensive overview of my technical skills and the tools I use to build innovative solutions</p>
+                        <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-whit to-cyan-100 mb-4 sm:mb-6 text-white">Skills & Expertise</h2>
+                        <p className="text-base sm:text-xl text-blue-200 max-w-2xl mx-auto mb-4 sm:mb-6">A comprehensive overview of my technical skills and the tools I use to build innovative solutions</p>
                     </div>
                 </div>
                 <SkillsSection />
@@ -135,7 +135,7 @@ const LandingPage = () => {
             </section>
 
             {/* Contact Section */}
-            <section className="max-w-5xl mx-auto my-16 p-10 pt-20 fade-in" id='contact'>
+            <section className="max-w-5xl mx-auto my-10 sm:my-16 p-4 sm:p-10 pt-16 sm:pt-20 fade-in" id='contact'>
                 <div className='text-center '>
                     <h1 className="text-4xl lg:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-100">Let's Connect</h1>
                     <p className="text-xl text-blue-200 max-w-3xl mx-auto">Have an exciting project in mind or want to explore collaboration 
@@ -143,7 +143,7 @@ const LandingPage = () => {
                     </p>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 mt-8">
                     {/* Left Section */}
                     <div className="space-y-8">
                     {/* <!-- Header & Description --> */}
@@ -256,13 +256,13 @@ const LandingPage = () => {
                     </div>
                     </div>
                     {/* Right Section - Contact Form */}
-                    <div className='bg-navy-800/20 backdrop-blur-sm rounded-2xl border border-blue-500/20 p-8'>
+                    <div className='bg-navy-800/20 backdrop-blur-sm rounded-2xl border border-blue-500/20 p-4 sm:p-8'>
                     <div className='mb-8'>
                         <h2 className="text-2xl font-bold mb-2 text-white">Send Me a Message</h2>
                         <p className="mb-2 text-blue-200">Fill out the form below and I'll get back to you as soon as possible.</p>
                     </div>
-                    <form className="space-y-6" id="contact-form" ref={formRef} onSubmit={handleSubmit}>
-                        <div className="grid sm:grid-cols-2 gap-6">
+                    <form className="space-y-4 sm:space-y-6" id="contact-form" ref={formRef} onSubmit={handleSubmit}>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                             {/* <!-- Name Input --> */}
                             <div>
                             <label for="name" className="block text-blue-200 text-sm font-medium mb-2">Your Name *</label>
@@ -305,7 +305,7 @@ const LandingPage = () => {
                         {/* <!-- Submit Button --> */}
                         <button
                                 type="submit"
-                                className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-medium py-3 px-6 rounded-lg hover:from-blue-700 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-navy-800 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3 group"
+                                className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-medium py-3 px-6 rounded-lg hover:from-blue-700 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-navy-800 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3 group text-base sm:text-lg"
                                 >
                                 <span>{buttonText}</span>
                                 <svg
@@ -334,10 +334,10 @@ const LandingPage = () => {
             </section>
 
             {/* Footer */}
-            <footer className='relative bg-gradient-to-b from navy-900 via-navy-950 to-black text-white mt-5 overflow-hidden'>
+            <footer className='relative bg-gradient-to-b from navy-900 via-navy-950 to-black text-white mt-5 overflow-hidden text-center sm:text-left'>
                 <div className='absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparetm via-blue-500/30 to-transparent'></div>
-                <div className='relative z-10 max-w-7xl mx-auto px-8 sm:px-16 py-16'>
-                    <div className=' grid lg:grid-cols-4 md:grid-cols-4 gap-12 fade-in'>
+                <div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-8 sm:px-16 py-10 sm:py-16'>
+                    <div className=' grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8 md:gap-12 fade-in'>
                         <div className="lg:col-span-2 md:col-span-2">
                             <div className='mb-6 w-48'>
                                 <svg width="100%" height="100%" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -382,8 +382,7 @@ const LandingPage = () => {
                                     width="1em" 
                                     xmlns="http://www.w3.org/2000/svg"
                                     >
-                                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 
-                                    108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 
+                                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 
                                     29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 
                                     0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 
                                     42.69-48.3 87.88-48.3 94 0 111.28 61.9 
@@ -410,8 +409,7 @@ const LandingPage = () => {
                                     xmlns="http://www.w3.org/2000/svg"
                                     >
                                     <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 
-                                    0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 
-                                    2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 
+                                    0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 
                                     2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 
                                     5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 
                                     8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 
@@ -509,8 +507,8 @@ const LandingPage = () => {
                     </div>
                 </div>
                 <div className='border-t border-blue-500/10 bg-black/30 backdeop-blur-sm '>
-                    <div className='max-x-7xl mx-auto px-8 sm:px-16 py-6'>
-                        <div className='flex flex-col sm:flex-row justify-between items-center gap-4 text-sm'>
+                    <div className='max-x-7xl mx-auto px-4 sm:px-8 sm:px-16 py-4 sm:py-6'>
+                        <div className='flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4 text-xs sm:text-sm'>
                             <div className='flex items-center gap-2 text-blue-100/60'>
                                 <span>
                                     ©
