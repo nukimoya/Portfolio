@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FaGithub, FaLinkedin, FaBars, FaTimes } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTimes } from 'react-icons/fa';
 
 const navLinks = [
   { name: 'About', href: '#about' },

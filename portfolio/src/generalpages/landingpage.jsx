@@ -77,7 +77,7 @@ const LandingPage = () => {
 
 
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 mt-4 justify-center w-full max-w-xs sm:max-w-none">
-                    <a href="/JavaScript - functions.pdf" download="Samuel_Adelakun_Resume"
+                    <a href="/AYOMIKUN ADELAKUN Resume - Copy - Copy-8.pdf" download="Samuel_Adelakun_Resume"
                      className="w-full sm:w-auto px-6 sm:px-8 py-3 rounded-full bg-gradient-to-r from-blue-700 to-blue-600 text-white font-semibold shadow-lg hover:scale-105 hover:from-emerald-500 hover:to-emerald-400 hover:to-blue-500 hover:translate-y-2 transition-all duration-300 text-center">
                     My Resume
                     </a>

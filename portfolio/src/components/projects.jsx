@@ -11,19 +11,12 @@ import codequestImage10 from '/projects/codecraft/progress.png';
 import codequestImage11 from '/projects/codecraft/leaderboard.png';
 import codequestImage12 from '/projects/codecraft/profile.png';
 
-// import codequestImage1 from '../assets/react.svg';
-// import codequestImage1 from '../assets/react.svg';
-// import codequestImage1 from '../assets/react.svg';
-// import codequestImage1 from '../assets/react.svg';
-// import codequestImage1 from '../assets/react.svg';
-// import codequestImage1 from '../assets/react.svg';
-// import codequestImage1 from '../assets/react.svg';
-// import codequestImage1 from '../assets/react.svg';
-// import codequestImage1 from '../assets/react.svg';
-import studyMateImage from '../assets/react.svg'; // Your local image
+
+import studyMateImage from '../assets/react.svg';
+
 import hotelEaseImage1 from '../assets/react.svg';
+
 import fastfoodImage1 from '../assets/react.svg';
-// import codequestImage1 from '../assets/react.svg';
 
 const projects = [
   {
