@@ -2,7 +2,6 @@
 
 Welcome to my personal developer portfolio — a sleek, responsive, and animated website built to showcase my skills, projects, and experience. Designed with performance and aesthetics in mind, this site reflects my expertise in modern frontend development.
 
-![Screenshot of Portfolio](./public/assets/portfolio-screenshot.png)
 
 ## 🔧 Tech Stack
 
@@ -26,10 +25,10 @@ To run the project locally:
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/your-portfolio.git
+git clone https://github.com/nukimoya/Portfolio.git
 
 # Navigate into the project
-cd your-portfolio
+cd portfolio
 
 # Install dependencies
 npm install
