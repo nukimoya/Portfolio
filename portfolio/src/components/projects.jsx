@@ -53,7 +53,7 @@ const projects = [
     date: 'April – June 2025',
     title: 'FutureForge',
     subtitle: 'AI-Powered Career Path Recommender',
-    project_link: 'https://futureforge.vercel.app/',
+    // project_link: 'https://futureforge.vercel.app/',
     project_git: 'https://github.com/nukimoya/futureforge',
     images: [futureforgeImage1, futureforgeImage2, futureforgeImage3, futureforgeImage4, futureforgeImage5, futureforgeImage6],
     description: 'An AI-powered career recommendation platform that helps students and professionals discover ideal career paths through an interactive aptitude test, psychological profiling, and intelligent matching.',

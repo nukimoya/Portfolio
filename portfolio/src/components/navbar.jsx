@@ -10,7 +10,7 @@ const navLinks = [
 
 const socialLinks = [
   {
-    href: 'https://linkedin.com/in/samuel-adelakun-ba1a2a346',
+    href: 'https://linkedin.com/in/samuel-adelakun-35b379248/',
     label: 'LinkedIn',
     icon: (
       <FaLinkedin size={22} />

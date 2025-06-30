@@ -77,7 +77,7 @@ const LandingPage = () => {
 
 
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 mt-4 justify-center w-full max-w-xs sm:max-w-none">
-                    <a href="/AYOMIKUN ADELAKUN Resume - Copy - Copy-8.pdf" download="Samuel_Adelakun_Resume"
+                    <a href="/Samuel_Adelakun_Resume.pdf" download="Samuel_Adelakun_Resume"
                      className="w-full sm:w-auto px-6 sm:px-8 py-3 rounded-full bg-gradient-to-r from-blue-700 to-blue-600 text-white font-semibold shadow-lg hover:scale-105 hover:from-emerald-500 hover:to-emerald-400 hover:to-blue-500 hover:translate-y-2 transition-all duration-300 text-center">
                     My Resume
                     </a>
@@ -227,7 +227,7 @@ const LandingPage = () => {
                         <h4 className="text-white font-medium mb-4">Follow Me</h4>
                         <div className="flex gap-4">
                         {/* <!-- LinkedIn --> */}
-                        <a href="https://www.linkedin.com/in/adeyemi-aladesuyi-426a9b244/"
+                        <a href="https://www.linkedin.com/in/samuel-adelakun-35b379248/"
                             className="w-12 h-12 bg-navy-800/50 backdrop-blur-sm rounded-lg border border-blue-500/20 flex items-center justify-center text-blue-200 hover:text-blue-400 transition-all duration-300 hover:border-cyan-400/40 hover:translate-y-1"
                             title="LinkedIn">
                             <FaLinkedin size={22} />
@@ -374,7 +374,7 @@ const LandingPage = () => {
                              <div className="flex items-center gap-4">
                                 {/* <!-- LinkedIn Link --> */}
                                 <a 
-                                    href="https://www.linkedin.com/in/samuel-adelakun-ba1a2a346" 
+                                    href="https://www.linkedin.com/in/samuel-adelakun-35b379248/" 
                                     target="_blank" 
                                     rel="noopener noreferrer" 
                                     aria-label="LinkedIn" 
