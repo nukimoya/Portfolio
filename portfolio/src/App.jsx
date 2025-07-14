@@ -1,7 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom'
-import './App.css'
 import LandingPage from './generalpages/landingpage.jsx'
 import { initEmailJS } from '../emailconfig';
 import { ToastContainer } from 'react-toastify';

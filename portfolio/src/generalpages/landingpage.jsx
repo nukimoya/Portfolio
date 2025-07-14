@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import Typewriter from 'typewriter-effect';
-import { FaGithub, FaLinkedin, FaBars, FaTimes } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 // import { useState } from 'react'
 
@@ -68,7 +68,7 @@ const LandingPage = () => {
                         autoStart: true,
                         loop: true,
                     }}
-                    />
+                    /> 
                 </div>
 
                 <div className="max-w-3xl text-xs xs:text-sm md:text-lg text-blue-100 mt-2 mb-10 px-3 py-4 sm:px-5 sm:py-6 bg-transparent border border-white/10 shadow-[0_15px_30px_-5px_rgba(0,0,0,0.5)] rounded-2xl backdrop-blur-lg">
